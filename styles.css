@@ -1,0 +1,182 @@
+/* Question 0. Import a font and make all text in the body using that font. Check the homework instructions for more information!*/
+/* Set all text in the body to be a certain color (whatever color you choose!)*/
+/* Center all text in the body. Check out the homework spec for help.*/
+
+body {
+    margin: 50px auto;
+    max-width: 1200px;
+    /* YOUR CODE HERE */
+    text-align: center;
+}
+
+/* Question 1: Add a border, border radius, box shadow, or whatever other styling you'd like to your image! */
+.profile_picture {
+    width: 175px;
+    width: 175px;
+    border: 2px solid #000; 
+    border-radius: 50%; 
+    
+}
+
+.profile_picture:hover{
+    border: 1px solid #f9f8f8;
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 45px;
+    transition: ease-in-out 0.5s;
+}
+
+/* Question 2. Select the h1 tag and add a hover effect! You can change the background-color, color, opacity, or anything you want.*/
+
+/* YOUR CODE HERE */
+
+h1:hover {
+    background-color: #f0f0f0; 
+    color: #3498db; 
+    opacity: 0.8; 
+    transform: scale(1.1);
+}
+
+
+
+/* Question 3. Add different background colors for all the different sections (Education, Experience, etc.) by selecting them via ids. */
+
+/* YOUR CODE HERE */
+
+#education {
+    background-color: #f0e68c; 
+}
+
+#experience {
+    background-color: #b3dcea; 
+}
+
+#projects {
+    background-color: #a9f6a9; 
+}
+
+#contact {
+    background-color: #f9c4c3; 
+}
+
+
+
+/* Question 4. Add margin, padding, and borders to the section-wrapper class! */
+
+
+
+.section-wrapper {
+    background-color: #a5d2ee;
+    border: 1.5px solid #000; 
+    padding: 10px ;
+
+}
+
+#education {
+    transition: ease-in-out 0.5s;
+}
+
+#education:hover {
+    background-color: #e6b00f; 
+    color: #060606; 
+    opacity: 0.8; 
+    transform: scale(1.1);
+}
+
+
+/* Experience Section */
+
+/* Question 5a. Use CSS Flexbox to display your experiences as shown in the diagram.
+ Hint: Check the homework spec for some help!*/
+
+ .experience-wrapper {
+    display: flex; 
+    gap: 20px; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+/* Question 5b. Add a background color to the experience-list-item class.*/
+
+.experience-list-item {
+    border: 2px solid #1d3557;
+    text-align: left;
+    width: 250px;
+    padding: 10px ;
+    border-radius: 15px;
+    background-color: #cedfea;
+
+    /* Side note: the transition attribute makes effects look smoother! 
+    This means the hover effect will slowly kick in for 0.2s. */
+    transition: ease-in-out 0.2s;
+}
+
+
+
+/* Question 5c. Let's take a break! Add a hover effect to each experience-list-item div. 
+Experiment with border, border-radius, background-color, or whatever you want!*/
+
+.experience-list-item:hover {
+    background-color: #f0f0f0; 
+    color: #000000; 
+    opacity: 0.8; 
+    border: 1px solid #eff2f5;
+    
+}
+
+
+
+/* Projects Section */
+
+/* Question 6. Use CSS Flexbox and hover effects for the Projects Section, just as you did for the Experience Section! */
+
+.project-wrapper {
+    display: flex; 
+    gap: 20px; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.project-list-item {
+    border: 2px solid #1d3557;
+    text-align: left;
+    width: 250px;
+    padding: 10px ;
+    border-radius: 15px;
+    background-color: #cedfea;
+
+    /* Side note: the transition attribute makes effects look smoother! 
+    This means the hover effect will slowly kick in for 0.2s. */
+    transition: ease-in-out 0.2s;
+}
+
+.project-list-item:hover {
+    background-color: #f0f0f0; 
+    color: #000000; 
+    opacity: 0.8; 
+    border: 1px solid #eff2f5;
+    
+}
+
+
+/* Contact Section */
+
+/* Question 7. Make your link look something like the one shown in the homework spec!*/
+
+.contact_link {
+    text-decoration: none; 
+    padding: 10px 20px;
+    background-color: rgb(148, 166, 246); 
+    color: white; 
+    border-radius: 50px; 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); 
+    font-weight: bold; 
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact_link:hover {
+    background-color: rgb(42, 65, 167);
+    transform: scale(1.05);
+}
